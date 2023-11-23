@@ -1,0 +1,108 @@
+#box { 
+	
+	background: white;
+	width: 100%;
+	height: 100%;
+	
+	position: relative;
+}
+
+body { 
+	display: flex;
+	justify-content: center;
+	position: relative;
+ }
+
+h1 {
+	display: flex;
+	justify-content: center;
+}
+
+.flow-box{
+	margin-top: 36px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.title-box {
+	width:300px;
+	height: 100px;
+	border-radius: 24px;
+}
+
+.green {
+	background-color: skyblue;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.grid-colum {
+	display: grid;
+  	grid-template-columns: auto auto auto auto auto auto auto auto;
+  	gap: 10px;
+}
+
+.title-box > p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.space-1x {
+	display: grid;
+	grid-column: 2 / span 2;
+}
+.space-2x {
+	display: grid;
+	grid-column: 3 / span 2;
+}
+.space-3x {
+	display: grid;
+	grid-column: 4 / span 2;
+}
+.space-4x {
+	display: grid;
+	grid-column: 5 / span 2;
+}
+.space-5x {
+	display: grid;
+	grid-column: 6 / span 2;
+}
+.space-6x {
+	display: grid;
+	grid-column: 7 / span 2;
+}
+.logo { 
+	position: fixed;
+	bottom: 18px;
+	width: 100%;
+	height: 80px;
+}
+.logo-image {
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 1024px) {
+  #box {
+  	height: calc(100vh - 108px);
+  	overflow: auto;
+  }
+}
+
+@media (max-width: 500px) {
+	h1 {
+		justify-content: center;
+		margin-inline: 50px;
+		word-break: break-word;
+	}
+	.grid-colum {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
